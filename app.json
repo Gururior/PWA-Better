@@ -24,7 +24,20 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/Designer.png",
+      "icon": "./assets/icon.png",
+      "manifest":{
+        "name": "better-PWA",
+        "short_name": "BM-PWA"
+      },
+      "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "serviceWorker": {
+        "src": "./service-worker.js" 
+      }
     },
     "plugins": [
       "expo-router"
